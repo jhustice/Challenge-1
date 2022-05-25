@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+img {
+    width: 58px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.grid-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    color: #fff;
+    padding: 0 15rem;
+    border-radius: 5px;
+}
+
+#items {
+    padding: 2rem 3rem;
+    line-height: 1.5;
+    height: 499px;
+}
+
+#items:first-child {
+    border-radius: 7px 0 0 7px;
+}
+
+#items:last-child {
+    border-radius: 0 7px 7px 0;
+}
+
+#items img {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+#items h1 {
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 25px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 29px;
+}
+
+#items p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.btn {
+    padding: 0.55rem .65rem;
+    border-radius: 20px;
+    background: hsl(0, 0%, 95%);
+    width: 150px;
+    border: 2px solid hsl(0, 0%, 95%);
+    margin-top: 80px;
+}
+
+.btn-sedan {
+    color: hsl(31, 77%, 52%);
+}
+
+.btn-sedan:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-suvs {
+    color: hsl(184, 100%, 22%);
+}
+
+.btn-suvs:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-luxury {
+    color: hsl(179, 100%, 13%);
+}
+
+.btn-luxury:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.sedan {
+    background: hsl(31, 77%, 52%);
+}
+
+.suvs {
+    background: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background: hsl(179, 100%, 13%);
+}
+
+@media(max-width: 768px) {
+    .grid-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #items:first-child {
+        border-radius: 7px 0 0 0;
+    }
+
+    #items:nth-child(2) {
+        border-radius: 0 7px 7px 0;
+    }
+
+    #items:last-child {
+        border-radius: 0 0 7px 7px;
+    }
+}
+
+
+@media(max-width: 500px) {
+    .grid-items {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #items:first-child {
+        border-radius: 7px 7px 0 0;
+    }
+
+    #items:nth-child(2) {
+        border-radius: 0;
+    }
+
+    #items:last-child {
+        border-radius: 0 0 7px 7px;
+    }
+
+    #items {
+        padding: 1rem 3rem;
+        height: 439px;
+    }
+
+    #items img {
+        padding-top: 12px;
+        margin-bottom: 15px;
+    }
+
+    #items h1 {
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        margin-top: 30px;
+    }
+}
