@@ -26,6 +26,9 @@ a {
 
 button {
     outline: none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 13px;
+    /* font-weight: 500; */
 }
 
 button:hover {
@@ -87,8 +90,8 @@ button:hover {
 }
 
 .btn {
-    padding: 0.55rem .65rem;
-    border-radius: 20px;
+    padding: .85rem .5rem;
+    border-radius: 25px;
     background: hsl(0, 0%, 95%);
     width: 150px;
     border: 2px solid hsl(0, 0%, 95%);
